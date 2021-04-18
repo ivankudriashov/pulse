@@ -50,7 +50,24 @@
             }               
         }
     }
-    
+    .footer {
+        &__info {
+            position: absolute;
+            top: 0;
+            left: 100%;
+            transform: translateX(-100%);
+            width: 400px;
+            height: 200px;
+            background: $main-color;
+            padding: 30px 30px 30px 30px;
+        }
+        &__addr {
+            margin-bottom: 20px;
+        }
+        &__phone {
+            margin-bottom: 26px;
+        }
+    }
 }
 
 @media (max-width: 767px) {
@@ -95,8 +112,49 @@
             margin-top: 8px;
         }
     }
+    .catalog {
+        &__tab {
+            font-size: 16px;
+            line-height: 46px;  
+        }
+        &__content {
+            &_active {
+                justify-content: center;
+            }
+        }
+    }
+    .customers {
+        &__item {
+            flex-direction: column;
+        }
+        &__img {
+            margin: 0;
+        }
+        &__descr {
+            padding: 0;
+            margin-top: 20px;
+        }
+    }
+    .footer {
+        min-height: 490px;
+        iframe {
+            height: 300px;
+            margin: 0;
+        }
+        &__info {
+            margin: 0;
+            position: relative;
+            width: 100%;
+            height: 182px;
+            background: $main-color;
+            padding: 20px 20px 20px 20px;
+        }             
+    }
 }
-@media (max-width: 575px) {      
+@media (max-width: 575px) { 
+    .container {
+        max-width: 300px;
+    }     
     .header {
         flex-direction: column;
         &__logo {
@@ -145,21 +203,25 @@
         &__descr {
             display: none;
         }
-        .feed-form {
-            width: 260px;
-            margin: 0 auto;            
-            input {                
-                height: 50px;                
-                border: none;
-                padding: 0 20px;               
-            }
-            .button_submit {
-                width: 100%;
-                height: 55px;
-            }
+    }
+    .feed-form {
+        width: 260px;
+        margin: 0 auto;            
+        input {                
+            height: 50px;                
+            border: none;
+            padding: 0 20px;               
+        }
+        .button_submit {
+            width: 100%;
+            height: 55px;
+        }
+        &_mt25 {
+            margin-top: 25px;
         }
     }
     .title {
+        font-size: 24px;
         &_left {
             font-size: 26px;
             line-height: 30px;
@@ -171,4 +233,43 @@
             max-width: 280px;
         }
     }
+    .catalog {
+        &__tabs{
+            flex-direction: column;           
+        }
+        &__tab { 
+            margin-bottom: 20px;
+        }        
+    }
+    .customers {
+        &__item {
+            flex-direction: column;
+        }
+        &__img {
+            margin: 0;
+        }
+        &__descr {
+            padding: 0;
+            margin-top: 20px;
+        }
+    }
+    .footer {
+        &__addr {
+            font-size: 17px;
+        }
+    }
+    .modal {
+        width: 320px;
+        min-height: 402px;
+        background: #F2F2F2;
+        padding: 20px 20px 40px 20px;
+        &__close {
+            top: 5px;
+            right: 5px;
+            color: $main-color;
+            font-size: 41px;
+            line-height: 21px;
+            cursor: pointer;
+        }
+    }    
 }
