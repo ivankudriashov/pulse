@@ -138,7 +138,12 @@
             &_active {
                 transform: translateX(-100%);
                 margin-left: 0px;
-            }
+            }                      
+        }
+        &__list-content {
+            margin-bottom: 0;
+            padding-left: 0;
+            list-style-type: none;
             li {
                 position: relative;
                 font-weight: 300;
@@ -155,7 +160,7 @@
                     left: -14px;
                     top: 7px;
                 }
-            }            
+            }           
         }
         &__back {
             position: absolute;

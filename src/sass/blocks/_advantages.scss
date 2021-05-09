@@ -7,7 +7,7 @@
         display: flex;
         justify-content: space-between;
     }       
-    &__icon {
+    &__item {
         width: 255px;
         display: flex;
         flex-direction: column;
@@ -30,6 +30,11 @@
         a {
             text-decoration-line: underline;
             color: #FF0000;
+        }
+    }
+    &__icon {
+        &_animated {
+            animation: heartbeat 1.5s ease infinite;
         }
     }
 }

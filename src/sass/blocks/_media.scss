@@ -9,10 +9,16 @@
     }
     .advantages {
         &__icon {
-            width: 200px;
+            width: 100px;
         }
         &__subtitle {
             font-size: 13px;
+        }
+        &__item {
+            margin-right: 20px;
+            &:last-child {
+                margin-right: 0;
+            }
         }
     }
     .carousel {
@@ -81,7 +87,7 @@
         }
     }
     .promo{
-        max-height: 400px;
+        min-height: 400px;
         &__header {
             font-size: 37px;
         }
@@ -90,7 +96,7 @@
         }
         &__wrapper {
             margin-top: 50px;
-        }
+        }        
     }
     .advantages {
         padding: 40px 0 40px 0;
@@ -100,9 +106,12 @@
             margin-top: 40px;
         }
         &__icon {
-            width: 255px;
+            width: 100px;
             &:not(:first-child){
                 margin-top: 25px;
+            }
+            &_animated {
+                animation: none;
             }
         }
         &__title {
@@ -110,6 +119,9 @@
         }
         &__subtitle {
             margin-top: 8px;
+        }
+        &__item {
+            margin-right: 0;
         }
     }
     .catalog {
